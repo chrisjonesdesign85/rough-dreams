@@ -1,0 +1,10 @@
+#tour {
+    width: 65%;
+    margin: auto;
+    text-align: center;
+}
+
+#tour h1 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
