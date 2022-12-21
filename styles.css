@@ -10,6 +10,10 @@ body {
     text-align: center;
 }
 
+a:hover {
+    color: #120d0f;
+}
+
 h1 {
     color: white;
     /* font-family: 'Anton', sans-serif; */
@@ -18,8 +22,8 @@ h1 {
     margin-top: 50px;
     margin-bottom: 50px;
 }
+
 .nav {
-    margin-top: 10px;
     background-color: rgb(0, 0, 0);
     display: flex;
     justify-content: center;
@@ -35,12 +39,27 @@ h1 {
 
 }
 
+.logo-bg {
+    width: 155px;
+    height: 100px;
+    background-color: red;
+    position:relative 
+}
 .logo {
     height: 50px;
-    /* z-index: 999; */
     padding: 0px;
   position: relative;
-  /* left: calc(-50vw + 50%); */
+}
+
+.logo-square {
+    width: 155px;
+    height: 70px;
+    background-color: black;
+    /* position: absolute; */
+    margin: auto;
+    /* left: 638px; */
+    border-radius: 50px;
+    /* position: fixed; */
 }
 
 .hero {
@@ -75,13 +94,12 @@ h1 {
 }
 
 .social {
-    /* height: 100px; */
     background-color: #f9bbd0;
     
 }
 
 .social-inner {
-    width: 50%;
+    width: 65%;
     height: 100%;
     padding: 26px;
     margin: 0 auto;
@@ -94,7 +112,8 @@ h1 {
     width: 100%;
     text-align: center;
     background-color:rgb(233, 233, 233);
-    padding: 100px;
+    padding: 50px;
+    padding-bottom: 50px;
 }
 
 .listen-inner {
