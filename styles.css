@@ -404,7 +404,7 @@ footer a:hover {
   @media only screen and (max-width: 500px) {
 
     a {
-        font-size: 12px;
+        font-size: 10px;
         margin: 0;
         padding: 0;
     }
