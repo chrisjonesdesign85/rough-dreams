@@ -34,7 +34,7 @@ h1 {
 /** my style variables **/
 
 .drop-shadow {
-    drop-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
 
 /** section styles **/
@@ -123,6 +123,20 @@ h1 {
     /* opacity: 65%; */
 }
 
+#tour-bg {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-image: url("img/texture.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    margin: auto;
+    text-align: center;
+    padding: 100px;
+}
+
+
 .listen-now-btn{
     width: 200px;
     display: flex;
@@ -141,18 +155,6 @@ h1 {
 
 /** Tour Styles **/
 
-#tour-bg {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    background-image: url("img/texture.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size:cover;
-    margin: auto;
-    text-align: center;
-    padding: 100px;
-}
 
 .social {
     background-color: #f9bbd0;
@@ -414,7 +416,7 @@ footer a:hover {
         width: 90%;
     }
 
-    .tour-bg {
+    #tour-bg {
         padding: 0;
         margin: 0;
     }
@@ -424,11 +426,23 @@ footer a:hover {
     padding: 0;
     align-items: center;
 }
-    #flyer img {
-        width: 90vw;
-        height: auto;
-        /* object-fit: cover; */
-        }
+
+#flyer img {
+    width: 100%;
+    padding: 20px;
+
+}
+
+.social-inner {
+    width: 100%;
+    margin: 0px;
+    justify-content: space-evenly;
+}
+
+.social-inner i {
+    font-size: 40px;
+    
+}
 
 
   }
