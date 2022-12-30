@@ -34,7 +34,7 @@ h1 {
 /** my style variables **/
 
 .drop-shadow {
-    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    drop-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
 
 /** section styles **/
@@ -395,4 +395,32 @@ footer a:hover {
     to {
        opacity: 1;
     }
+  }
+
+  /** Media Queries **/
+
+  @media only screen and (max-width: 500px) {
+
+    a {
+        font-size: 12px;
+        margin: 0;
+        padding: 0;
+    }
+.nav {
+    justify-content: space-evenly;
+}
+    .navMargins {
+        width: 100%;
+    }
+#flyer {
+    margin: 0;
+    padding: 0;
+}
+    #flyer img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        }
+
+
   }
