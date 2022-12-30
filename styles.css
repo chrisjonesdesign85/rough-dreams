@@ -409,17 +409,25 @@ footer a:hover {
 .nav {
     justify-content: space-evenly;
 }
+
     .navMargins {
-        width: 100%;
+        width: 90%;
     }
+
+    .tour-bg {
+        padding: 0;
+        margin: 0;
+    }
+
 #flyer {
     margin: 0;
     padding: 0;
+    align-items: center;
 }
     #flyer img {
-        width: 100%;
+        width: 90vw;
         height: auto;
-        object-fit: cover;
+        /* object-fit: cover; */
         }
 
 
