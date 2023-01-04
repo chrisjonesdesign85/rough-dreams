@@ -455,6 +455,13 @@ footer a:hover {
 
 .listen-inner {
     margin:0 auto;
+    padding-bottom: 300px;
+}
+
+#contact {
+    width: 95%;
+    margin: 0 auto;
+    padding: 0;
 }
 
   }
