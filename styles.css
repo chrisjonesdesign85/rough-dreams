@@ -34,7 +34,7 @@ h1 {
 /** my style variables **/
 
 .drop-shadow {
-    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    box-shadow: rgb(0, 0, 0) 0px 20px 30px -10px;
 }
 
 /** section styles **/
@@ -89,15 +89,23 @@ h1 {
     
     width: 100vw;
     height: 100vh;
+    box-sizing: border-box;
     background: -webkit-linear-gradient(rgba(0, 0, 0, 0.529), rgba(249, 187, 208, 0.8)), url("img/roughdreams.jpeg");
     background: linear-gradient(rgba(0, 0, 0, 0.529), rgba(249, 187, 208, 0.8)), url("img/roughdreams.jpeg"); /* The least supported option. */
-    /* background: url("https://scondtent-atl3-1.xx.fbcdn.net/v/t39.30808-6/324025766_675647060909224_2172829405500903291_n.jpg?stp=cp6_dst-jpg&_nc_cat=107&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=KSIXfxxU1koAX-ELcS9&_nc_ht=scontent-atl3-1.xx&oh=00_AfA0iU8CSCmflV8XDVge1uQZa1vh3JVIS-cbM_BRLlksDQ&oe=63BF2025"); */
     margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     /* background-attachment: fixed; */
-    background-position: center;
+    background-position: top;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100vw auto;
     animation: fadeIn 5s;
+}
+
+.test > img {
+    width: 75%;
+    opacity: 65%;
 }
 .hero {
    
@@ -421,39 +429,41 @@ footer a:hover {
         padding: 0;
     }
 
-.nav {
-    justify-content: space-evenly;
-}
+    .nav {
+        justify-content: space-evenly;
+    }
 
-.navMargins {
-    margin: 0;
-}
+    .navMargins {
+        margin: 0;
+    }
 
     .navMargins {
         width: 90%;
     }
 
+    .test {
+        height: 320px;
+    }
     #tour-bg {
         padding: 0;
         margin: 0;
     }
 
-#flyer {
-    margin: 0;
-    padding: 0;
-    align-items: center;
-}
+    #flyer {
+        margin: 0;
+        padding: 0;
+        align-items: center;
+    }
 
-#flyer img {
-    width: 100%;
-    padding: 20px;
+    #flyer img {
+        width: 100%;
+        padding: 20px;
+    }
 
-}
-
-.social-inner {
-    width: 100%;
-    margin: 0px;
-    justify-content: space-evenly;
+    .social-inner {
+        width: 100%;
+        margin: 0px;
+        justify-content: space-evenly;
 }
 
 .social-inner i {
@@ -474,6 +484,9 @@ footer a:hover {
     width: 95%;
     margin: 0 auto;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
   }
