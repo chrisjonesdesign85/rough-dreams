@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Comfortaa:wght@500&display=swap');
-   
+
 * {
     margin: 0;
     padding: 0;
@@ -14,12 +14,13 @@ body {
 }
 
 a {
-    color:#fff;
+    color: #fff !important;
     transition: color 1s;
 }
 
 a:hover {
-    color: #281c20;
+    color: #fff;
+    background-color: transparent !important;
 }
 
 h1 {
@@ -29,7 +30,6 @@ h1 {
     margin-top: 50px;
     margin-bottom: 50px;
 }
-
 
 /** my style variables **/
 
@@ -65,13 +65,16 @@ h1 {
 .logo {
     height: 50px;
     padding: 0px;
-  /* position: relative; */
+    transition: all .2s ease-in-out;
+    /* position: relative; */
 }
 
 .logo:hover {
-    -webkit-filter: blur(2px); /* Chrome, Safari, Opera */
-    filter: blur(2px);
+    /* -webkit-filter: blur(2px); */
+    /* Chrome, Safari, Opera */
+    /* filter: blur(2px); */
     /* transition: transform */
+    transform: rotate(-5deg) scale(1.1);
 }
 
 .logo-square {
@@ -86,14 +89,16 @@ h1 {
 }
 
 .test {
-    
+
     width: 100vw;
     height: 100vh;
     box-sizing: border-box;
     background: -webkit-linear-gradient(rgba(0, 0, 0, 0.529), rgba(249, 187, 208, 0.8)), url("img/roughdreams.jpeg");
-    background: linear-gradient(rgba(0, 0, 0, 0.529), rgba(249, 187, 208, 0.8)), url("img/roughdreams.jpeg"); /* The least supported option. */
+    background: linear-gradient(rgba(0, 0, 0, 0.529), rgba(249, 187, 208, 0.8)), url("img/roughdreams.jpeg");
+    /* The least supported option. */
     margin-top: 30px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     /* background-attachment: fixed; */
@@ -103,15 +108,16 @@ h1 {
     animation: fadeIn 5s;
 }
 
-.test > img {
+.test>img {
     width: 75%;
     opacity: 65%;
 }
+
 .hero {
-   
+
     width: 100vw;
     /* min-width: 500px; */
-    height: 100vh; 
+    height: 100vh;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -120,11 +126,13 @@ h1 {
     justify-content: center;
     align-items: center; */
     /* overflow: hidden; */
-    animation: animateBg 50s linear infinite;  
-    background: #f9bbd0;  /* fallback color. Make sure this is just one solid color. */
+    animation: animateBg 50s linear infinite;
+    background: #f9bbd0;
+    /* fallback color. Make sure this is just one solid color. */
 
     background: -webkit-linear-gradient(rgba(0, 0, 0, 0.529), rgba(249, 187, 208, 0.8)), url("img/roughdreams2.jpeg");
-    background: linear-gradient(rgba(0, 0, 0, 0.529), rgba(249, 187, 208, 0.8)), url("img/roughdreams2.jpeg"); /* The least supported option. */
+    background: linear-gradient(rgba(0, 0, 0, 0.529), rgba(249, 187, 208, 0.8)), url("img/roughdreams2.jpeg");
+    /* The least supported option. */
     animation: fadeIn 5s;
 }
 
@@ -150,14 +158,14 @@ h1 {
     background-image: url("img/texture.jpg");
     background-position: center;
     background-repeat: no-repeat;
-    background-size:cover;
+    background-size: cover;
     margin: auto;
     text-align: center;
     padding: 100px;
 }
 
 
-.listen-now-btn{
+.listen-now-btn {
     width: 200px;
     display: flex;
     align-items: center;
@@ -178,23 +186,26 @@ h1 {
 
 .social {
     background-color: #f9bbd0;
-    
+
 }
 
 @keyframes animateBg {
-    0%,100%
-    {
-        transform:scale(1);
+
+    0%,
+    100% {
+        transform: scale(1);
     }
-    50%
-    {
-        transform:scale(1.2);
+
+    50% {
+        transform: scale(1.2);
     }
 }
+
 section {
     opacity: 0.2;
 }
-span{
+
+span {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -202,10 +213,11 @@ span{
     height: 4px;
     background: #fff;
     border-radius: 50%;
-    box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.1), 0 0 0 8px rgba(255, 255, 255, 0.1), 0 0 20px rgba(255, 255, 255, 1)  ;
-    animation:  animate 3s linear infinite;
+    box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.1), 0 0 0 8px rgba(255, 255, 255, 0.1), 0 0 20px rgba(255, 255, 255, 1);
+    animation: animate 3s linear infinite;
 }
-span::before{
+
+span::before {
     content: '';
     position: absolute;
     top: 50%;
@@ -216,101 +228,101 @@ span::before{
 }
 
 @keyframes animate {
-    0%
-    {
+    0% {
         transform: rotate(315deg) translateX(0);
         opacity: 1;
     }
-    70%
-    {
+
+    70% {
         opacity: 1;
 
     }
-    100%
-    {
+
+    100% {
         transform: rotate(315deg) translateX(-1500px);
         opacity: 0;
 
     }
-    
+
 }
 
-span:nth-child(1){
+span:nth-child(1) {
     top: 0;
     right: 0;
-    left:initial;
-    animation-delay:0 ;
+    left: initial;
+    animation-delay: 0;
     animation-duration: 1s;
 }
 
-span:nth-child(2){
+span:nth-child(2) {
     top: 0;
     right: 80px;
-    left:initial;
-    animation-delay:0.2s;
+    left: initial;
+    animation-delay: 0.2s;
     animation-duration: 3s;
 }
 
-span:nth-child(3){
+span:nth-child(3) {
     top: 80px;
     right: 0px;
-    left:initial;
-    animation-delay:0.4s ;
+    left: initial;
+    animation-delay: 0.4s;
     animation-duration: 2s;
 }
 
-span:nth-child(4){
+span:nth-child(4) {
     top: 0;
     right: 180px;
-    left:initial;
-    animation-delay:0.6s;
+    left: initial;
+    animation-delay: 0.6s;
     animation-duration: 1.5s;
 }
 
-span:nth-child(5){
+span:nth-child(5) {
     top: 0;
     right: 400px;
-    left:initial;
-    animation-delay:0.8s;
+    left: initial;
+    animation-delay: 0.8s;
     animation-duration: 2.5s;
 }
 
-span:nth-child(6){
+span:nth-child(6) {
     top: 0;
     right: 600px;
-    left:initial;
-    animation-delay:1s ;
+    left: initial;
+    animation-delay: 1s;
     animation-duration: 10s;
 }
-span:nth-child(7 ){
+
+span:nth-child(7) {
     top: 300px;
     right: 0px;
-    left:initial;
-    animation-delay:1s ;
+    left: initial;
+    animation-delay: 1s;
     animation-duration: 1.75s;
 }
 
-span:nth-child(8){
+span:nth-child(8) {
     top: 0px;
     right: 700px;
-    left:initial;
-    animation-delay:1.4s ;
+    left: initial;
+    animation-delay: 1.4s;
     animation-duration: 1.25s;
 }
 
-span:nth-child(9){
+span:nth-child(9) {
     top: 0px;
     right: 1000px;
-    left:initial;
-    animation-delay:0.75s ;
+    left: initial;
+    animation-delay: 0.75s;
     animation-duration: 2.25s;
 }
 
-span:nth-child(10){
+span:nth-child(10) {
     top: 0px;
     right: 1000px;
-    left:initial;
-    animation-delay:2.75s ;
+    left: initial;
+    animation-delay: 2.75s;
     animation-duration: 2.25s;
 }
 
@@ -328,14 +340,19 @@ span:nth-child(10){
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-size: 1.2em;
 }
+
+/* .social-inner i {
+    font-size: 1.2em;
+} */
 
 /** Listen Section **/
 
 #listen {
     width: 100%;
     text-align: center;
-    background-color:rgb(233, 233, 233);
+    background-color: rgb(233, 233, 233);
     padding: 50px;
     padding-bottom: 50px;
     z-index: 10;
@@ -344,7 +361,7 @@ span:nth-child(10){
 }
 
 .listen-inner {
-    width: 75%;
+    width: 67%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -364,14 +381,14 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: rgb(249,187,208);    
+    background: rgb(249, 187, 208);
 }
 
 footer p {
     margin: 20;
     padding: 0;
     margin-bottom: 0;
-    
+
 }
 
 footer a:hover {
@@ -381,20 +398,38 @@ footer a:hover {
 
 
 #contact {
-    width: 50%;
+    width: 65%;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     margin: auto;
     margin-bottom: 50px;
     padding: 50px;
     border: 1px solid #f9bbd0;
 }
 
-.button {
+.contact h2 {
+    color: #f9bbd0;
+}
+
+.contact form {
+    color: #f9bbd0;
+}
+
+.contact input,
+textarea {
+    color: #f9bbd0;
+    padding: 10px;
+    border: 1px solid #f9bbd0;
+    background: #120d0f;
+}
+
+.contact-button {
     background-color: #f9bbd0;
     text-decoration: none;
     border: none;
-    padding: 10px;
+    padding: 0 20px;
 }
 
 .input {
@@ -404,30 +439,44 @@ footer a:hover {
 }
 
 .hidden {
-    display:none;
+    display: none;
 }
 
 
 /** - animations - **/
 @keyframes fadeIn {
-    
+
     from {
         opacity: 0;
     }
+
     to {
-       opacity: 1;
+        opacity: 1;
     }
-  }
+}
 
-  /** Media Queries **/
+/** Media Queries **/
 
-  @media only screen and (max-width: 500px) {
-
-    a {
-        font-size: 10px;
-        margin: 0;
-        padding: 0;
+@media screen and (max-width: 1024px) {
+    .social-inner {
+        width: 90%;
+        font-size: 1em;
+        margin: auto;
     }
+
+}
+
+
+@media screen and (max-width: 768px) {
+    .social-inner i {
+        font-size: 50px;
+
+    }
+}
+
+@media screen and (max-width: 425px) {
+
+
 
     .nav {
         justify-content: space-evenly;
@@ -435,15 +484,23 @@ footer a:hover {
 
     .navMargins {
         margin: 0;
+        width: 90%;
+        background-color: red;
     }
 
-    .navMargins {
-        width: 90%;
+    .navMargins a {
+        font-size: 10px;
+        color: red;
+    }
+
+    .logo {
+        width: 100px;
     }
 
     .test {
         height: 320px;
     }
+
     #tour-bg {
         padding: 0;
         margin: 0;
@@ -464,29 +521,29 @@ footer a:hover {
         width: 100%;
         margin: 0px;
         justify-content: space-evenly;
-}
+    }
 
-.social-inner i {
-    font-size: 40px;
-    
-}
+    .social-inner i {
+        font-size: 40px;
 
-#listen {
-    padding: 0;
-}
+    }
 
-.listen-inner {
-    margin:0 auto;
-    padding-bottom: 300px;
-}
+    #listen {
+        padding: 0;
+    }
 
-#contact {
-    width: 95%;
-    margin: 0 auto;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+    .listen-inner {
+        margin: 0 auto;
+        padding-bottom: 200px;
+    }
 
-  }
+    #contact {
+        width: 95%;
+        margin: 0 auto;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
